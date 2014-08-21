@@ -15,7 +15,7 @@ A zip is available if you want to use this for your MODx site. Feel free to reac
 ## Dependencies 
 This fork requires Bob's Ray CAPTCHA[https://github.com/BobRay/Captcha] in order to function properly.
  
-## Directions
+## Directions [Will be Updated, Currently Outdated]
 1. Install the pageLocker - Fork ZIP
 2. Create a new resource called "formResource"
   1. Assign the template called "secureFormTemplate"

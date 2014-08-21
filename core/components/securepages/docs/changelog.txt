@@ -1,0 +1,12 @@
+Changelog for SecurePages.
+
+SecurePages DEVELOPMENT 8/20/14
+----------------
+Currently in Development:
+[x]Password Verification
+[-]Logout Functionality
+[ ]Styled Forms to serve as Example Template and Usable Template
+[ ]Additional Language Support
+[ ]Tutorial
+[ ]Base CODE for Template
+[ ]Multiple Template Support
