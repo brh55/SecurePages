@@ -10,7 +10,19 @@ This fork requires Bob's Ray CAPTCHA[https://github.com/BobRay/Captcha] in order
 Directions [HAVE CHANGED]
 
 ## Installation
-A zip is available if you want to use this for your MODx site. Feel free to reach out to me and I'll be gladly to upload it to a host. This is currently not complete, thus installation instructions through git are not provided.
+###As of right now everything is not fully implemented and has not been tested.
+After cloning the repository, create a zip to import to your MODx Package Manager. To do so run the build script (build.transport.php) in the _build folder.
+
+MAC/LINUX ZIP CREATION
+```
+$ cd _build
+$ php transport.core.php
+```
+
+WINDOWS (Depends on PHP and SecurePages Location, follow example below)
+```
+C:\PHP5\php.exe -f "C:\securepages\_build\build.transport.php"
+```
 
 ## Dependencies 
 This fork requires Bob's Ray CAPTCHA[https://github.com/BobRay/Captcha] in order to function properly.
