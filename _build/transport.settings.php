@@ -1,8 +1,10 @@
 <?php
-/** System settings for SecurePages Plugin GPLv2
-* @package securepages
-* @subpackage build
-*/
+/**
+ * System settings for SecurePages
+ *
+ * @package securepages
+ * @subpackage build
+ */
 /* @var $modx modX */
 $settings = array();
 $settings['securepages.securetemplateid']= $modx->newObject('modSystemSetting');

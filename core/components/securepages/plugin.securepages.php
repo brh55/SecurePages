@@ -45,7 +45,7 @@ if(!function_exist("exitSecure")) {
             $msg=$modx->lexicon('log_out');
             $modx->event->_output = $msg;
             sleep(3);
-            $modx->sendForward(1);=
+            $modx->sendForward(1);
         }
     }
 }
