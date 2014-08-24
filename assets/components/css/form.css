@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background-color: #F2F1EF;
+	color: #000;
+	font-family: 'Souce Sans Pro', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+/* --------- ICON ----------- */
+
+.fa {
+	padding:0px 10px 0px 0px;
+	color: #DBDBDB;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.4);
+}
+
+.fa-key {
+	border: 2px solid #eee;
+	color: rgb(134, 134, 134);
+	background-color: #eeeeee;
+	padding: 9px 9px 7px 8px;
+	margin-right: -8px;
+}
+
+/* ---------- LOGIN ---------- */
+
+div.title {
+	margin: 30px 0px;
+	text-align: center;
+}
+
+#login {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#login h2 {
+	color: #DBDBDB;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.4);
+	display: inline-block;
+	font-size: 28px;
+}
+
+#login fieldset {
+	background-color: #fff;
+	padding: 20px 39px;
+	border: 1px solid #E9E9E9;
+	border-bottom: 3px solid #DADADA;
+	-webkit-box-shadow: 4px 4px 11px -6px rgba(0,0,0,0.37);
+	-moz-box-shadow: 4px 4px 11px -6px rgba(0,0,0,0.37);
+	box-shadow: 4px 4px 11px -6px rgba(0,0,0,0.37);
+}
+
+#login fieldset p {
+	color: #777;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+} 
+
+#login fieldset input[type="password"] {
+	border: 2px solid #eee;
+	color: #777;
+	padding: 4px 8px;
+	width: 293px;
+	margin: 15px 0px;
+}
+
+#login fieldset input[type="submit"] {
+	background: rgba(73,155,234,1);
+	background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+	background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 10px;
+	border: 1px solid rgb(100, 120, 173);
+	width: 348px;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: #2574A9;
+	cursor: pointer;
+}

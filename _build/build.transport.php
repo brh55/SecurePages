@@ -18,7 +18,7 @@ $sources = array(
     'build' => $root . '_build/',
     'data' => $root . '_build/data/',
     'resolvers' => $root . '_build/resolvers/',
-    'templates' => $root.'core/components/'.PKG_NAME_LOWER.'/templates/',
+    'templates' => $root.'core/components/'.PKG_NAME_LOWER.'/elements/templates/',
     'lexicon' => $root . 'core/components/'.PKG_NAME_LOWER.'/lexicon/',
     'docs' => $root.'core/components/'.PKG_NAME_LOWER.'/docs/',
     'source_assets' => $root.'assets/components/'.PKG_NAME_LOWER,
@@ -95,6 +95,26 @@ $category->set('category','SecurePages');
 
 $vehicle = $builder->createVehicle($category,$attr);
 $builder->putVehicle($vehicle);
+
+/* add snippets */
+$snippets = include $sources['data'].'transport.snippets.php';
+if (is_array($snippets)) {
+    $category->addMany($snippets,'Snippets');
+} else { 
+    $modx->log(modX::LOG_LEVEL_FATAL,'Adding snippets failed...'); 
+}
+    $modx->log(modX::LOG_LEVEL_INFO,'Packaging snippets...'); flush();
+unset($snippets);
+
+/* add templates */
+$templates = include $sources['data'].'transport.templates.php';
+if (is_array($templates)) {
+    $category->addMany($templates,'Templates');
+} else { 
+    $modx->log(modX::LOG_LEVEL_FATAL,'Adding templates failed...');
+}
+    $modx->log(modX::LOG_LEVEL_INFO,'Packaging templates...'); flush();
+unset($templates);
 
 /* prompt user with accepting readme and license file*/
 $builder->setPackageAttributes(array(
